@@ -1,0 +1,13 @@
+veri=input("Veri girisi yapiniz:")
+sayilar=[]
+toplam=0
+for i in veri:
+    if i in "0987654321":
+        sayilar.append(i)
+for a in sayilar:
+    if a.isdigit()==True:
+        toplam+=int(a)
+print(toplam)
+
+
+#sum(sayilar) fonksiyonunu liste elemanlari int olsaydi kullanabilirdik.
