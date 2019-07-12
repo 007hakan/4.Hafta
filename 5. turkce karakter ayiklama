@@ -1,0 +1,10 @@
+#Futbolcular dosyasındaki futbolcu isimlerini yazdığınız program ile
+# Türkçe karakter içermeyecek bir hale getirip yeni bir dosyaya kaydediniz.
+with open ("futbolcular.txt","r+",encoding="utf-8") as file:
+    a=file.read()
+    kaynak = "šèéŠşçöğüıŞÇÖĞÜİ"
+    hedef = "seeSscoguiSCOGUI"
+    tran=str.maketrans(kaynak,hedef)
+    z=a.translate(tran)
+with open("yeni.txt","r+",encoding="utf-8")as f:
+    f.write(z)
