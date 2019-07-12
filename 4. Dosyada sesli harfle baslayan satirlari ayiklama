@@ -1,0 +1,9 @@
+#Futbolcular dosyasındaki futbolculardan ismi
+# sesli harf ile başlayanları ayrı bir dosyaya yazdırınız.
+sesli_harfler="aeioAEIOUİ"
+with open ("futbolcular.txt","r+",encoding="utf-8") as file:
+    for i in file:
+       if i[0] in sesli_harfler:
+           with open("seslifutbolcular.txt", "a+", encoding="utf-8") as f:
+               f.write(i)
+
