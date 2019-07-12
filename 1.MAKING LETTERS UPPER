@@ -1,0 +1,7 @@
+print("***MAKING ALL LETTERS CAPITAL***")
+try:
+    veri=input("Give some information about your future plans:")
+    inf=veri.upper()
+    print(inf)
+except:
+    print("There is an unexpected problem occurred!")
