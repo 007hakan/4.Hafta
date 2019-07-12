@@ -1,0 +1,19 @@
+numbers=""
+character=""
+try:
+    for i in countletters:
+        if i in "1234567890":
+            numbers+=i
+        elif i in "qwertyuiopasdfghjklzxcvbnm":
+            small+=i
+        elif i in "QWERTYUIOPASDFGHJKLZXCVBNM":
+            capital+=i
+        else:
+            character+=i
+
+    print("Total numbers:",len(numbers))
+    print("Total small letters:", len(small))
+    print("Total capital letters:", len(capital))
+    print("Total other characters:", len(character))
+except:
+    print("An unexpected error occurred!")
